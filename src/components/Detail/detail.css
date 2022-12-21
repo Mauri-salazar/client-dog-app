@@ -1,0 +1,112 @@
+.icon {
+  margin-left: 50%;
+  margin-top: 400px;
+}
+
+.cont-info {
+  height: 90vh;
+  display: block;
+  margin: auto;
+  width: 800px;
+  margin-top: 50px;
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;
+}
+/* .cont-info:hover {
+  transform: scale(1.02);
+} */
+
+.cont-info::after {
+  content: "";
+  opacity: 0.5; top: 0; left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.title {
+  font-style: italic;
+  /* text-shadow: 0 0 10px #db73e6, 0 0 20px #fff, 0 0 30px #db73e6, 0 0 10px #db73e6,
+  0 0 10px #db73e6, 0 0 10px #db73e6, 0 0 10px #db73e6;; */
+  margin-bottom: 0;
+  padding: 20px;
+  color: rgb(219, 215, 215);
+  text-shadow:0 0 10px #FF99D7, 0 0 20px #FF99D7, 0 0 30px #FF99D7, 0 0 10px #FF99D7,
+  0 0 10px #FF99D7, 0 0 10px #FF99D7, 0 0 10px #FF99D7;
+}
+/* .title:hover {
+  transform: scale(1.2);
+} */
+
+.cont-img{
+  position: absolute;
+  margin-left: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dog-img {
+  text-align: center;
+  border-radius: 30px;
+  width: 350px;
+  height: 450px;
+  margin: 10px;
+}
+
+.cont-text {
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: oblique;
+  padding: 10px;
+  display: inline;
+  color: rgb(219, 215, 215);;
+}
+
+.cont-text p {
+  color: rgb(219, 215, 215);
+  margin-block-start: unset;
+  margin-block-end: unset;
+}
+
+.height {
+  display: inline-block;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.weight {
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.life {
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-home {
+  width: 200px;
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #905E96;
+  border-radius: 6px;
+  border: 2px solid #8d7248;
+}
+
+.btn-home:hover {
+  color: #3c3d15bb;
+  background-color: #FF99D7;
+}
