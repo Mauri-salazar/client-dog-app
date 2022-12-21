@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  react-client-dogs:
+    environment:
+      VIRTUAL_HOST: client.dogs.mauriciosalazar.dev, www.client.dogs.mauriciosalazar.dev
+      LETSENCRYPT_HOST: client.dogs.mauriciosalazar.dev, www.client.dogs.mauriciosalazar.dev
+      LETSENCRYPT_EMAIL: maurisa2004@gmail.com
+      VIRTUAL_PORT: 3020
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - 3020
+    ports:
+      - 3020:3020
+      # - 80:3500
+    container_name: react-client-dogs
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
